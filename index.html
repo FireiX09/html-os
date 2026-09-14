@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gryc jiri</title>
+    <title>gryc jiria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,50 +13,138 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
         }
         
         .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        header {
             text-align: center;
-            color: white;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #ff9500;
         }
         
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
         }
         
-        .info {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            letter-spacing: 1px;
+        .subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            font-weight: 400;
+            letter-spacing: 0.5px;
         }
         
-        .info a {
-            color: #fff;
-            text-decoration: none;
+        .content {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
             font-weight: 500;
-            border-bottom: 2px solid #fff;
-            transition: opacity 0.3s;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
         }
         
-        .info a:hover {
-            opacity: 0.8;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        
+        th {
+            background-color: #ff9500;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background-color: #fff9f3;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: #ffe4cc;
+            color: #d97706;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>gryc jiri</h1>
-       <p>tento web je hostován přes GitHub</p>
+        <header>
+            <h1>gryc jiria</h1>
+            <p class="subtitle">Web developer & enthusiast</p>
+        </header>
+        
+        <div class="content">
+            <h2>Projekty</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projekt</th>
+                        <th>Popis</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>html-os</strong></td>
+                        <td>Osobní webová stránka</td>
+                        <td><span class="badge">Live</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>grync.fun</strong></td>
+                        <td>Hlavní doména</td>
+                        <td><span class="badge">Live</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Projekt 3</strong></td>
+                        <td>V přípravě...</td>
+                        <td><span class="badge" style="background-color: #dbeafe; color: #0284c7;">Soon</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>Hosted on <a href="https://pages.github.com" style="color: #ff9500; text-decoration: none; font-weight: 500;">GitHub Pages</a></p>
+        </footer>
     </div>
 </body>
 </html>
